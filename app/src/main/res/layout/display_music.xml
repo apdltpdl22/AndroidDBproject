@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="149dp"
+            android:ems="10"
+            android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextcomposer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextlyric"
+            android:layout_below="@+id/editTextlyric"
+            android:layout_marginTop="22dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginBottom="0dp"
+            android:text="곡 이름"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/button4"
+            android:layout_marginTop="300dp"
+            android:nestedScrollingEnabled="true"
+            android:onClick="insert"
+            android:text="추가" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextYear"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="발매연도"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="-149dp"
+            android:text="작곡가"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTextcomposer"
+            android:layout_alignLeft="@+id/textView2"
+            android:text="작사가"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextcomposer"
+            android:layout_alignRight="@+id/editTextName"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextAlbum"
+            android:layout_alignBottom="@+id/editTextAlbum"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toLeftOf="@+id/editTextcomposer"
+            android:text="수록앨범"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextlyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextName"
+            android:layout_below="@+id/editTextYear"
+            android:ems="10"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextlyric"
+            android:layout_below="@+id/editTextName"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="false"
+            android:layout_alignTop="@id/button4"
+            android:layout_marginTop="300dp"
+            android:onClick="edit"
+            android:text="수정" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:nestedScrollingEnabled="true"
+            android:onClick="delete"
+            android:text="삭제" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_alignParentBottom="true"
+            android:nestedScrollingEnabled="true"
+            android:onClick="search"
+            android:text="검색" />
+    </RelativeLayout>
+
+</ScrollView>
